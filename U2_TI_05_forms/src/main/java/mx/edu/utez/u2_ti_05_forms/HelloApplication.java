@@ -57,12 +57,12 @@ public class HelloApplication extends Application {
             String rol = cbRolComboBox.getSelectionModel().getSelectedItem();
             if (nombre.isEmpty() || apellido.isEmpty() || edad.isEmpty() || rol == null) {
                 grid.setStyle("-fx-background-color: pink");
-
+                lblResultado.setStyle("-fx-background-color: pink");
                 lblResultado.setText("debes de ingresar todos los datos");
             } else{
                 lblResultado.setText("El nombre es " + nombre + " Apellido es " + apellido + " Edad es " + edad + " Rol es " + rol);
-                lblResultado.setStyle("-fx-background-color: lightblue");
-                grid.setStyle("-fx-background-color: darkgreen");
+                lblResultado.setStyle("-fx-background-color:turquoise");
+                grid.setStyle("-fx-background-color: lightgreen");
 
             }
 
