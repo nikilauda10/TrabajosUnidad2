@@ -6,6 +6,7 @@ import javafx.geometry.Pos;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
@@ -32,6 +33,8 @@ public class HelloApplication extends Application {
         Scene scene = new Scene(vbox, 500, 240);
 
         stage.setTitle("Hola nicho!");
+        Image image = new Image(getClass().getResourceAsStream("Images/solana.png"));
+        stage.getIcons().add(image);
         stage.setScene(scene);
         stage.show();
     }
