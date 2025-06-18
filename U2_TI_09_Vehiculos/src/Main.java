@@ -13,9 +13,10 @@ public class Main {
     g1.estacionar(c2);
     g1.estacionar(m1);
     g1.estacionar(m2);
-        System.out.println("numero de vehiculos:" + g1.contarVehiculos());
+        System.out.println("Numero de vehiculos:" + g1.contarVehiculos());
+        System.out.println("______________________________________________");
     g1.retirar(c2.getPlaca());
-        System.out.println("numero de vehiculos:" + g1.contarVehiculos());
+        System.out.println("Numero de vehiculos:" + g1.contarVehiculos());
 
     }
 }
