@@ -4,8 +4,10 @@ public class Garage {
 
 
    public Garage(int numEspacios) {
+
        this.vehiculos = new Vehiculo[numEspacios];
    }
+
    public boolean estacionar(Vehiculo vehiculo) {
        for(int i=0; i < vehiculos.length; i++) {
            if(vehiculos[i]==null) {
